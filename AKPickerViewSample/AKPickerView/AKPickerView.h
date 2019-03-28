@@ -43,6 +43,8 @@ typedef NS_ENUM(NSInteger, AKPickerViewStyle) {
 @property (nonatomic, assign, getter=isMaskDisabled) BOOL maskDisabled;
 @property (nonatomic, assign) AKPickerViewStyle pickerViewStyle;
 @property (nonatomic, assign, readonly) NSUInteger selectedItem;
+@property (nonatomic, strong) NSNumber *item;
+@property (nonatomic, strong) NSArray *items;
 @property (nonatomic, assign, readonly) CGPoint contentOffset;
 
 - (void)reloadData;
